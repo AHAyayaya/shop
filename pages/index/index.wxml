@@ -1,1 +1,18 @@
 <!--index.wxml-->
+<!-- 1.text组件的基本使用 -->
+<text>Hello Gxx\n</text>
+
+<!-- 2.text中selectable属性的使用 -->
+<!-- 默认情况下，text中的文本长按是不能选中的 -->
+<text selectable>Hello Chz\n</text>
+
+<!-- 3.text中space：(1)ensp:中文字符空格一般大小
+(2)emsp:中文字符空格大小
+(3)nbsp:根据字体大小设置空格大小 -->
+<text>Hello Gxx\n</text>
+<text space="ensp">Hello Chz\n</text>
+<text space="emsp">Hello Gxx\n</text>
+<text space="nbsp">Hello Chz\n</text>
+
+<!-- 4.decode属性: 是否解码文本 -->
+<text decode>5 &gt; 3</text>
