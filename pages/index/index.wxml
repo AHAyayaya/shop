@@ -1,1 +1,12 @@
 <!--index.wxml-->
+<!-- 1.view组件的基本使用 -->
+<view>Hello Gxx</view>
+
+<!-- 2.hover-class属性 -->
+<view class="box" hover-class="tapbox" hover-stay-time="200">Hello Chz</view>
+
+<!-- 3.hover-stop-propagation属性 -->
+<view class="bigbox" hover-class="bigbox-tap">
+  <view class="box" hover-class="tapbox" hover-stay-time="200"
+  hover-stop-propagation>Hello Chz</view>
+</view>

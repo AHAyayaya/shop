@@ -1,1 +1,23 @@
 /**index.wxss**/
+.box{
+  width: 100px;
+  height: 100px;
+  background-color: antiquewhite;
+}
+
+.tapbox{
+  background-color: #ff5777;
+  color: #fff;
+  font-size: 30px;
+}
+
+.bigbox{
+  width: 200px;
+  height: 200px;
+  margin-top: 20px;
+  background-color: burlywood;
+}
+
+.bigbox-tap{
+  background-color: darkcyan;
+}
