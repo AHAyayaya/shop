@@ -1,1 +1,21 @@
 <!--index.wxml-->
+<!-- 条件判断 wx:if -->
+<view>条件判断</view>
+<view wx:if="{{isShow}}">1111</view>
+<button size="mini" bindtap="btnshow">切换显示</button>
+
+<!-- wx:else -->
+<view>当前分数：{{score}}</view>
+<view wx:if="{{score >= 90}}">优秀</view>
+<view wx:elif="{{score >= 80}}">良好</view>
+<view wx:elif="{{score >= 60}}">及格</view>
+<view wx:else>不及格</view>
+<button size="mini" bindtap="increament">加5分</button>
+<button size="mini" bindtap="decreament">减5分</button>
+<view>现在的时间：{{nowdate}}</view>
+<!-- hidden属性和wx:if在控制隐藏组件是有什么区别 
+hidden:通过display控制(显示切换频率高使用)
+wx:if:通过创建销毁(显示切换频率低使用)
+-->
+<view hidden="{{true}}">我是hidden控制的</view>
+<view wx:if="{{false}}">我是wx:if控制的</view>
