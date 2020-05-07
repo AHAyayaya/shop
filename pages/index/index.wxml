@@ -1,1 +1,23 @@
 <!--index.wxml-->
+<!-- 1.input的基本使用 -->
+<input></input>
+
+<!-- 2.type:决定键盘类型 -->
+<view>type类型</view>
+<input type="text" placeholder="文本类型"></input>
+<input type="number" placeholder="数字类型"></input>
+<input type="password" placeholder="密码"></input>
+<input type="idcard" placeholder="身份证"></input>
+<input type="digit" placeholder="带小数点的键盘"></input>
+
+<!-- 3.comfirm-type:右下角按钮显示内容 -->
+<view>comfirm-type右下角按钮显示内容</view>
+<input confirm-type="send" placeholder="发送"></input>
+<input confirm-type="search" placeholder="搜索"></input>
+<input confirm-type="next" placeholder="下一个"></input>
+<input confirm-type="go" placeholder="前往"></input>
+<input confirm-type="done" placeholder="完成"></input>
+
+<!-- 4.input绑定事件 -->
+<view>input绑定事件</view>
+<input bindinput="input" bindfocus="focus" bindblur="blur"></input>

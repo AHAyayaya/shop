@@ -1,1 +1,5 @@
 /**index.wxss**/
+input{
+  border: 1px solid #ff5777;
+  margin: 10px;
+}
