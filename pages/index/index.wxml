@@ -1,1 +1,23 @@
 <!--index.wxml-->
+<!-- 1.image的基本使用 -->
+<!-- 注意：
+  1.image组件可以写成单标签，也可写成双标签.
+  2.image组件有默认大小：320*240.
+  3.image是一个行内块级元素
+ -->
+ <!-- <image /> -->
+
+ <!-- 2.可以显示本地图片也可以显示远程图片 -->
+ <image src="../../assets/test/480.png"></image>
+ <image src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"></image>
+
+ <!-- 补充：相册中的图片 -->
+<button bindtap="btnChoose">选择图片</button>
+<image src="{{imagePath}}"></image>
+
+<!-- 3.bindload:监听图片加载完成 lazy-load:懒加载 -->
+<image wx:for="{{1}}" lazy-load="{{true}}" bindload="imagefinished"
+ src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"></image>
+
+ <!-- 4. show-menu-by-longpress 长按图片显示识别小程序码菜单-->
+ <image show-menu-by-longpress="{{true}}" src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"></image>
