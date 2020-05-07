@@ -1,1 +1,5 @@
 /**index.wxss**/
+.pressed{
+  background-color: #ff5777;
+  color: #fff;
+}

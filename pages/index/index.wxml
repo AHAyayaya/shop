@@ -1,1 +1,23 @@
 <!--index.wxml-->
+<!-- 1.button的基本使用 -->
+<button>按钮</button>
+
+<!-- 2.sizi属性：mini -->
+<button size="mini">按钮</button>
+
+<!-- 3.type属性： -->
+<button size="mini" type="primary">绿色按钮</button>
+<button size="mini" type="default">白色按钮</button>
+<button size="mini" type="warn">按钮</button>
+
+<!-- 4.plain属性：镂空效果 -->
+<button size="mini" plain>按钮</button>
+
+<!-- 5.disable属性: 不可用 -->
+<button size="mini" disabled>按钮</button>
+
+<!-- 6.loading -->
+<button size="mini" loading>按钮</button>
+
+<!-- 7.hover-class属性：点击后变色 -->
+<button size="mini" hover-class="pressed">按钮</button>
