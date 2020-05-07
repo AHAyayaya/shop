@@ -1,1 +1,22 @@
 <!--index.wxml-->
+<!-- 1.scroll-view水平滚动：scroll-x -->
+<scroll-view class="content1" scroll-x>
+  <view wx:for="{{10}}" class="item1">
+    {{item}}
+  </view>
+</scroll-view>
+
+<!-- 2.scroll-view垂直滚动:scroll-y -->
+<scroll-view class="content2" scroll-y>
+  <view wx:for="{{10}}" class="item2">
+    {{item}}
+  </view>
+</scroll-view>
+
+<!-- 3.其他补充 -->
+<view>监听滚动位置</view>
+<scroll-view class="content2" scroll-y bindscroll="scroll">
+  <view wx:for="{{10}}" class="item2">
+    {{item}}
+  </view>
+</scroll-view>

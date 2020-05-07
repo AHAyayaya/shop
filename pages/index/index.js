@@ -4,5 +4,8 @@ const app = getApp()
 
 Page({
   data: {
+  },
+  scroll(event){
+    console.log('----',event)
   }
 })

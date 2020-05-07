@@ -1,1 +1,27 @@
 /**index.wxss**/
+.content1{
+  background-color: #f75f11;
+  color: #fff;
+  white-space: nowrap;
+}
+
+.item1{
+  width: 100px;
+  height: 100px;
+  background-color: #ff5777;
+  margin: 10px;
+  display: inline-block;
+}
+
+.content2{
+  background-color: #c57f55;
+  color: #fff;
+  height: 200px;
+  margin-top: 20px;
+}
+
+.item2{
+  height: 100px;
+  margin: 10px;
+  background-color: #ff5211;
+}
