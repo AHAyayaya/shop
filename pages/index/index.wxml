@@ -1,1 +1,25 @@
 <!--index.wxml-->
+<!-- 常见事件类型 -->
+<button bindtap="btnClick">按钮</button>
+<button bind:tap="btnClick">按钮</button>
+<button catch:tap="btnClick">按钮</button>
+<view class="box"
+      bind:touchstart="handleTouchStart"
+      bind:touchmove="handleTouchMove"
+      bind:touchend="handleTouchEnd"
+      bind:tap="handleTap"
+      bind:longpress="handleLongpress"></view>
+<!-- 事件传递参数 -->
+<view class="content">
+  <block wx:for="{{titles}}" wx:key="index">
+    <view class="item" bindtap="handleItemClick" data-index="{{index}}" data-item="{{item}}">{{item}}</view>
+  </block>
+</view>
+<!-- 事件冒泡(从里向外传递)和事件捕获(从外向里传递) bind和catch的区别-->
+<!-- bind:会一层一层传递 catch会阻止事件的进一步传递 -->
+<view class="view1" capture-bind:tap="handleCaptureView1" bind:tap="handleBindView1">
+  <view class="view2" capture-bind:tap="handleCaptureView2" catch:tap="handleBindView2">
+    <view class="view3" capture-bind:tap="handleCaptureView3" bind:tap="handleBindView3">
+    </view>
+  </view>
+</view>
