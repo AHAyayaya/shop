@@ -1,1 +1,22 @@
 <!--index.wxml-->
+<!-- template模板用法：必须要有name，在没有使用前，是不会进行任何渲染 -->
+<!-- <template name="testname">
+  <button>{{btntext}}</button>
+  <view>{{viewtext}}</view>
+</template> -->
+
+<!-- 通过import导入模板 -->
+<import src="/pages/template/template.wxml" />
+
+<!-- is使用模板，通过data传入数据 -->
+<!-- wxml导入有两种方式：
+  import导入：
+    1.主要是导入template
+    2.特点：不能进行递归导入
+  include引入：
+  1.将公共的wxml中的组件抽取到一个文件中
+  2.特点：不能导入template/wxs，但是可以进行递归导入
+ -->
+<include src="/pages/template/header.wxml" />
+<template is="testname" data="{{btntext: '点击',viewtext: '哈哈哈'}}" />
+<include src="/pages/template/footer.wxml" />
