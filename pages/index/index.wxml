@@ -1,1 +1,23 @@
 <!--index.wxml-->
+<!-- 列表渲染 wx:for -->
+<!-- 遍历数组 -->
+<view wx:for="{{['111','222','333']}}">{{item}}-{{index + 1}}</view>
+<!-- 遍历字符串 -->
+<view wx:for="Hello">{{item}} + {{index + 1}}</view>
+<!-- 遍历数字 -->
+<view wx:for="{{2}}">{{item}}</view>
+<!-- block标签不是一个组件 不会渲染,提升性能-->
+<block wx:if="{{!isShow}}" wx:for="{{2}}">
+  <button>按钮</button>
+  <view>111</view>
+  <text>222</text>
+</block>
+<!-- 给item和index改名字 在进行多层遍历时使用 名字之间不能用 - -->
+<view wx:for="{{movies}}" wx:for-item="movie" wx:for-index="i">{{movie}} {{i}}</view>
+<block wx:for="{{nums}}" wx:for-item="all_nums">
+  <block wx:for="{{all_nums}}">
+    <view>{{item}}</view>
+  </block>
+</block>
+<!-- key的作用:可以提高性能 当中间需要插入一个新的值，没有key时，后续的数据都会发生改变 有key时，他会给值绑定id，数据复用 -->
+<view wx:for="{{test}}" wx:key="">{{item}}</view>
