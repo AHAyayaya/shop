@@ -1,1 +1,4 @@
 <!--index.wxml-->
+<wxs src="../../wxs/info.wxs" module="info"/>
+<view>{{info.message}}</view>
+<view>{{info.sum(20,30)}}</view>
