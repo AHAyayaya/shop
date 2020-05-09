@@ -1,0 +1,2 @@
+<!--components/cpn1/cpn1.wxml-->
+<view class="box">我是在my-cpn中引入的cpn1组件</view>

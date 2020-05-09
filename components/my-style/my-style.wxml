@@ -1,0 +1,2 @@
+<!--components/my-style/my-style.wxml-->
+<view class="title">我是my-style组件</view>

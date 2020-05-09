@@ -1,1 +1,8 @@
 <!--index.wxml-->
+<view style="color: #ff5777;font-size=24rpx">自定义组件中也可以引入其他自定义组件，自定义组件起名字时只能用小写字母，-，_和数字，多个页面都使用同一个组件可以在app.json里进行全局注册</view>
+<!-- 1.自定义组件的基本使用 -->
+<my-cpn/>
+
+<!-- 2.自定义组件的样式细节 -->
+<view class="title" style="margin-top:30rpx">组件与页面之间样式不会相互影响，但是组件设置样式时不可以用id选择器，属性选择器，标签选择器,如果希望相互影响在子组件Component中使用options属性设置styleIsolation：shared/apply-shared</view>
+<my-style />
