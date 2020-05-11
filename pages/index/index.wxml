@@ -1,1 +1,18 @@
 <!--index.wxml-->
+
+<!-- 单插槽slot的使用 -->
+<!-- <my-slot>
+  <button>我是替换slot的按钮</button>
+</my-slot> -->
+
+<!-- 多插槽slot的使用 -->
+<!-- 注意事项：
+  1.需要给每一个插槽定义一个name
+  2.必须在Component中添加一个选项：options => true
+ -->
+<my-slot>
+  <button slot="slot1">我是替换slot的按钮</button>
+  <slider slot="slot2"></slider>
+  <text slot="slot3">111111</text>
+</my-slot>
+ 
