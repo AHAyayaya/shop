@@ -1,1 +1,10 @@
 <!--index.wxml-->
+
+<!-- 给自定义组件传递数据/样式 -->
+<my-prop title="哈哈哈" titleclass="red" />
+<my-prop title="嘿嘿嘿" titleclass="blue" />
+<my-prop titleclass="green" />
+
+<!-- 自定义组件传递事件 -->
+<view>当前计数：{{counter}}</view>
+<my-event bind:increament="increament"/>
