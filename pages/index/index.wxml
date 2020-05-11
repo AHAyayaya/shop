@@ -1,1 +1,2 @@
 <!--index.wxml-->
+<tab-control titles="{{titles}}" bind:itemClick="TabClick" />
