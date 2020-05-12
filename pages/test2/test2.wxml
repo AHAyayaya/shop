@@ -1,0 +1,4 @@
+<!--pages/test2/test2.wxml-->
+<text>pages/test2/test2.wxml</text>
+<!-- 返回两层 -->
+<navigator open-type="navigateBack" delta="2">提交</navigator>

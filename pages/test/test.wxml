@@ -1,0 +1,6 @@
+<!--pages/test/test.wxml-->
+<text>pages/test/test.wxml</text>
+<navigator url="../test2/test2">跳转到测试2页面</navigator>
+
+<!-- 通过事件进行返回 -->
+<button bindtap="back">返回</button>
