@@ -1,3 +1,12 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "c-banner": "/components/c-banner/c-banner",
+    "c-tab-control": "/components/c-tab-control/c-tab-control",
+    "c-goods": "/components/c-goods/c-goods",
+    "c-back-top": "/components/c-back-top/c-back-top",
+
+    "c-recommend": "./childCpn/c-recommend/c-recommend",
+    "c-popular": "./childCpn/c-popular/c-popular"
+  },
+  "navigationBarTitleText": "茜商城"
 }

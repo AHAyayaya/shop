@@ -1,1 +1,21 @@
 <!--index.wxml-->
+<!-- 轮播图 -->
+<c-banner list="{{banners}}" />
+
+<!-- 推荐 -->
+<c-recommend recommends="{{recommends}}" bind:imageLoad="ImageLoad"/>
+
+<!-- 本周流行 -->
+<c-popular />
+
+<!-- tab-control -->
+<c-tab-control titles="{{titles}}" bind:itemClick="TabClick" id="tab-control" class="{{TabFixed ? 'fixed': ''}}" />
+
+<c-tab-control titles="{{titles}}" wx:if="{{TabFixed}}" />
+
+<!-- 展示商品数据 -->
+<c-goods goods="{{goods[currentType].list}}" />
+
+<!-- 回到顶部 -->
+<!-- hidden对自定义组件无效 -->
+<c-back-top wx:if="{{showBackTop}}" />

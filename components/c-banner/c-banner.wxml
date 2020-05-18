@@ -1,0 +1,9 @@
+<!--components/c-banner/c-banner.wxml-->
+<!-- 1.展示轮播图 -->
+<swiper class="banner" circular autoplay interval="3000" duration="500" indicator-dots indicator-active-color="#ff5777" >
+  <block wx:for="{{list}}" wx:key="index">
+    <swiper-item class="banner-item">
+      <image src="{{item.image}}" mode="widthFix" />
+    </swiper-item>
+  </block>
+</swiper>

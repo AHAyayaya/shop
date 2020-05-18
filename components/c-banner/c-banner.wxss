@@ -1,0 +1,4 @@
+/* components/c-banner/c-banner.wxss */
+.banner-item image{
+  width: 100%;
+}
